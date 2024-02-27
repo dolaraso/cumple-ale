@@ -1,0 +1,110 @@
+#blank::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de scroll */
+}
+
+#blank::-webkit-scrollbar-thumb {
+    background-color: #ff466b; /* Color del botón de la barra de scroll */
+    border-radius: 4px; /* Radio de borde del botón de la barra de scroll */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: rgb(255,255,255);
+    overflow: hidden;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(231,231,231,1) 100%);
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wave{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 0;
+}
+
+#blank{
+    position: absolute;
+    margin: auto;
+    top: 100vh;
+    height: 100vh;
+    width: 850px;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+#blank video{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+#foto6{
+    top: 4500px;
+    left: 360px;
+}
+
+#foto8A{
+    top: 5600px;
+    left: 190px;
+}
+
+.carta-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carta-container img{
+    position: absolute;
+}
+
+
+#hoja{
+    position: absolute;
+    bottom: -400px;
+    z-index: 0;
+    transition: 0.3s all;
+}
+
+#carta-frente{
+    bottom: 57px;
+    filter: drop-shadow(0 -4px 5px rgba(0, 0, 0, 0.2));
+    z-index: 1;
+}
+
+#carta-abierta-container{
+    display: none;
+}
+
+#carta-cerrada{
+    z-index: 1;
+}
+
+#carta-abierta{
+    z-index: -2;
+}
+
+#corazon{
+    cursor: pointer;
+    bottom: 220px;
+    transition: all 0.1s;
+    filter: brightness(160%);
+    z-index: 2;
+}
+
+#corazon:hover{
+    filter: brightness(200%);
+}
